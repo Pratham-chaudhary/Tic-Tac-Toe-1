@@ -3,6 +3,7 @@ let resetBtn = document.querySelector("#reset");
 let newGameBtn = document.querySelector("#newGame");
 let msgContainer = document.querySelector(".msg-container");
 let msg = document.querySelector("#msg");
+var colourCode = document.getElementById("colour-code");
 
 let player0 = true;
 
@@ -22,6 +23,7 @@ const resetGame = () => {
     turn0 = true;
     enableBoxes();
     msgContainer.classList.add("hide");
+     getColor();
 
 }
 
@@ -31,15 +33,21 @@ boxes.forEach((btn) => {
     btn.addEventListener("click", () => {
 
         if (player0) {
+
+             btn.innerText = "0";
+            colourCode.innerText = "X's Turn";
             
             player0 = false;
         }
         else {
             
             btn.innerText = "X";
+            colourCode.innerText = "0's Turn";
             player0 = true;
         }
         btn.disabled = true;
+
+         getColor();
 
         checkWinner();
 
@@ -89,6 +97,25 @@ const checkWinner = () => {
 
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
+
+const getColor = () => {
+
+    const randomNumber = Math.floor(Math.random() * 16777215);
+    const random = "#" + randomNumber.toString(16);
+    document.body.style.backgroundColor = random;
+    // navigator.clipboard.writeText("chance of");
+
+    // document.getElementById("colour-code").innerText = "X's chance.";
+}
+
+
+
+    document.getElementById("btn").addEventListener(
+
+        "click",
+        getColor
+    )
 
 
 
