@@ -25,7 +25,7 @@ This project is a simple implementation of the classic game Tic-Tac-Toe using HT
 - **Customization**: Allow users to choose their marker symbols or customize the game's appearance.
 
 ## Credits:
-- This project was created by [Your Name or Organization].
+- This project was created by Pratham Chaudhary.
 - Inspired by various online tutorials and resources on web development.
 
 ## License:
