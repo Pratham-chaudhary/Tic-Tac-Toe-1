@@ -19,6 +19,12 @@ This project is a simple implementation of the classic game Tic-Tac-Toe using HT
 - **Win Detection**: The game detects winning combinations automatically and highlights the winning cells.
 - **Restart Option**: After the game ends, players have the option to restart and play again.
 
+- ## Screenshots:
+
+![UI1](UI1.png "UI1")
+
+![UI2](UI2.png "UI2")
+
 ## Future Improvements:
 - **AI Opponent**: Implement an AI opponent for single-player mode.
 - **Scorekeeping**: Add functionality to keep track of wins, losses, and draws.
